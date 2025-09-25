@@ -188,6 +188,6 @@ if torch.cuda.is_available():
 
 ---
 
-**마감일**: [강의에서 공지]
-**제출 방식**: GitHub Pull Request
-**문의**: seungtaek.choi@hufs.ac.kr
+- **마감일**: 2025년 10월 3일 (금요일) 오후 11시 59분
+- **제출 방식**: GitHub Pull Request
+- **문의**: seungtaek.choi@hufs.ac.kr
