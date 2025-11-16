@@ -53,8 +53,8 @@ AI가 자동으로 **핵심 요약, 번역, 설명**을 생성하여 복습 효�
 
 ### 4.1 Assignment 4 – 데이터 수집 및 분석
 - 공개 요약 데이터셋 수집:
-  - csebuetnlp/xlsum (Korean)
-  - google/sentence-compression (sentence-level)
+  - daekeun-ml/naver-news-summarization-ko (한국어: 네이버 뉴스 본문 + 요약)
+  - gopalkalpande/bbc-news-summary (영어: BBC 뉴스 기사 + 요약)
 - 수집한 데이터의 기본 정보 확인(df.info, describe)
 - 데이터 길이/분포/요약 관계 분석(EDA)
 - 필요한 경우 강의 자료(PDF/PPT)에서 텍스트 일부를 추출해 참고 자료로 활용
