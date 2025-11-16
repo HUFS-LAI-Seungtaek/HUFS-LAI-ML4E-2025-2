@@ -18,7 +18,7 @@
 
 - 긴 문장 위주의 PPT (예: AI공학, 어문 계열)  
 - 도표나 개념 중심의 PDF 강의 자료  
-- **외국어(특히 영어)**로 작성된 수업 자료  
+- 외국어(특히 영어)로 작성된 수업 자료  
 
 > **핵심 문제:**  
 > 시험 전 짧은 시간 안에 *핵심 내용 파악 + 번역 + 요약 정리*를 빠르게 수행할 방법이 부족하다.
@@ -52,8 +52,10 @@ AI가 자동으로 **핵심 요약, 번역, 설명**을 생성하여 복습 효�
 ## 4. ML 활용 계획
 
 ### 4.1 Assignment 4 – 데이터 수집 및 분석
-- 공개 요약 데이터셋 수집  
-  - 예: `CNN/DailyMail`, `Gigaword`, `KoBART Summarization Corpus`  
+- 공개 요약 데이터셋 수집:
+  - 후보: 
+    - csebuetnlp/xlsum (korean split): document -> summary 구조, 한국어 지원, HuggingFace에서 즉시 로드 가능
+    - google/sentence-compression: 한 문장 요약("slide title"과 구조 유사), 한국어 포함 다국어 지원
 - 강의 자료에서 텍스트 추출 후 학습용 샘플 제작  
 - 슬라이드별 텍스트 구조·키워드 빈도 분석
 
