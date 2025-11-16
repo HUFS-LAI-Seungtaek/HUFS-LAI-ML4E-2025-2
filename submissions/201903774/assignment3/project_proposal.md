@@ -53,11 +53,12 @@ AI가 자동으로 **핵심 요약, 번역, 설명**을 생성하여 복습 효�
 
 ### 4.1 Assignment 4 – 데이터 수집 및 분석
 - 공개 요약 데이터셋 수집:
-  - 후보: 
-    - csebuetnlp/xlsum (korean split): document -> summary 구조, 한국어 지원, HuggingFace에서 즉시 로드 가능
-    - google/sentence-compression: 한 문장 요약("slide title"과 구조 유사), 한국어 포함 다국어 지원
-- 강의 자료에서 텍스트 추출 후 학습용 샘플 제작  
-- 슬라이드별 텍스트 구조·키워드 빈도 분석
+  - csebuetnlp/xlsum (Korean)
+  - google/sentence-compression (sentence-level)
+- 수집한 데이터의 기본 정보 확인(df.info, describe)
+- 데이터 길이/분포/요약 관계 분석(EDA)
+- 필요한 경우 강의 자료(PDF/PPT)에서 텍스트 일부를 추출해 참고 자료로 활용
+- EDA 결과를 기반으로 모델 학습을 위한 전처리 방향 수립
 
 ### 4.2 Assignment 5 – 모델 학습 및 평가
 - **모델 후보 비교**
