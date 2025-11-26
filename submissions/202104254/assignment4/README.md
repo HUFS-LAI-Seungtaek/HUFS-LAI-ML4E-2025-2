@@ -27,9 +27,15 @@ ML 기반 이민 국가 추천 시스템 (ML-Powered Immigration Destination Rec
 
 2.1 데이터 소스 및 지표
 
-- worldbank_data_2013_2022.csv(코드 내에서 다운로드) - 국가 경제 및 거버넌스 지표 (World Bank) | 2013년 ~ 2022년 | 1인당 GDP, 군사비 지출 비중, 정부 효과성(Government Effectiveness) 
-- lgbt-military-equaldex.csv - 사회적 포용성 지표 (Equaldex, LGBT 권리) | 2008년 ~ 현재 | 군 복무 허용 여부 (소수자 포용성의 간접 지표) 
-- 한국 현황 정리.csv - 기준 국가(한국)의 상세 지표 | 2013년 ~ 2022년 | 벤치마킹 및 비교 분석을 위한 지표 
+- worldbank_data_2013_2022.csv(코드 내에서 다운로드) - 국가 경제 및 거버넌스 지표 (World Bank) | 2013년 ~ 2022년 | 1인당 GDP, 군사비 지출 비중, 정부 효과성(Government Effectiveness)
+- lgbt-military-equaldex.csv - 사회적 포용성 지표 (Equaldex, LGBT 권리) | ~ 2022년 | 군 복무 허용 여부 (소수자 포용성의 간접 지표)  
+- 한국 현황 정리.csv - 기준 국가(한국)의 상세 지표 | 2013년 ~ 2022년 | 벤치마킹 및 비교 분석을 위한 지표
+- 코드 내 뉴스기사 스크레이핑 | 감성분석을 위한 실제적 언어 데이터
+
+- worldbank_data_2013_2022.csv: 701개 데이터 존재
+- lgbt-military-equaldex.csv: 총 데이터는 2566개, 그러나 코드 내에서 범위를 2013 ~ 2022년으로 한정하여 659개 데이터 활용
+- 코드 내 뉴스기사 스크레이핑: 총 데이터는 566개, 각 카테고리별로 수집함, Ambiguous 94개 | "Don't ask, don't tell" 107개 | Legal 89개 | LGB permitted, transgender people banned 109개 | Illegal 111개 | South Korea(별도 분석용) 56개 
+
 
 2.2 데이터 전처리 및 통합
 
@@ -55,6 +61,8 @@ ML 기반 이민 국가 추천 시스템 (ML-Powered Immigration Destination Rec
 국가별 데이터 병합의 복잡성: 세 파일 모두 Entity(국가명) 또는 Code(ISO 코드) 기준으로 매칭 가능하지만, 연도가 서로 다를 수 있으므로 가장 최신 연도 기준으로 정렬/병합이 필요합니다.
 
 한국 관련 데이터의 자의성: 한국에 관한 데이터는 기존 CSV 파일에 존재하지 않아서 따로 정리하였습니다. 또한 한국이 들어가 있는 카테고리는 변희수 하사 사건을 통해 본 자의적 판단이기에 실제 법적 정책과는 차이가 있을 수 있습니다.
+
+데이터의 몇년간 차이: 2022년까지의 데이터를 기반으로 하므로 그 기간동안 정책이나 지표가 변경된 국가들에 케이스에는 대응하기 어렵습니다.
 
 
 4. 머신러닝 모델 구축 및 향후 계획 (ML Model & Future Plan)
