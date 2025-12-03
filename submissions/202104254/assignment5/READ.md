@@ -88,7 +88,6 @@
     *한국과 같이 일부 핵심 지표(예: 정부 효과성)에 결측치가 존재하는 경우, 학습 데이터 전체의 평균값으로 대체(Imputation)하여 분석을 수행했다. 이는 해당 국가의 고유한 특성을 완벽히 반영하지 못하여, 실제 현실과 다소 차이가 있는 예측 결과를 초래할 수 있다.
 
 * **이진 분류의 단순화 (Binary Classification Constraint):**
-    *복잡한 LGBT 정책 스펙트럼(Legal, Ambiguous, Don't ask don't tell, Illegal 등)을 단순히 **'Legal'**과 'Not Legal' 두 그룹으로 통합하여 이진 분류를 수행했다. 이로 인해 'Illegal'(완전 금지)과 'Ambiguous'(모호함) 간의 질적인 차이나, 'LGB permitted'(부분 허용)와 같은 중간 단계의 미묘한 뉘앙스를 모델이 세밀하게 구분하지 못했다는 한계가 있다.
-
+    *복잡한 LGBT 정책 스펙트럼(Legal, Ambiguous, Don't ask don't tell, Illegal 등)을 단순히 **'Legal'**과 'Not Legal' 두 그룹으로 통합하여 이진 분류를 수행했다. 이로 인해 'Illegal'(완전 금지)과 'Ambiguous'(모호함) 간의 질적인 차이나, 'LGB permitted'(부분 허용)와 같은 중간 단계의 미묘한 뉘앙스를 모델이 세밀하게 구분하지 못했다는 한계가 있다 .
  
 
