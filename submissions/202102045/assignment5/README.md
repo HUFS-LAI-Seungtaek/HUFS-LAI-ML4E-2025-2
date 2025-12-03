@@ -142,7 +142,7 @@ Test Dataset(학습에 사용되지 않은 데이터)을 대상으로 **ROUGE Me
 
 ### 8.2 Future Work (향후 계획)
 
-  - **도메인 적응**: BBC News(`xlsum`) 등 정치 도메인 데이터를 추가 확보하여 재학습(Re-training)을 시도할 계획입니다.
+  - **도메인 적응**: BBC News 등 정치 도메인 데이터를 추가 확보하여 재학습(Re-training)을 시도할 계획입니다.
   - **파라미터 튜닝**: Beam Search의 Beam Size를 조절하여 생성 다양성을 확보할 예정입니다.
 
 
