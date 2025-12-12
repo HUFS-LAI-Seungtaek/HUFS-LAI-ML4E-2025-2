@@ -31,16 +31,6 @@
 
 ---
 
-## 📂 프로젝트 구조
-
-깃허브 리포지토리는 아래와 같이 구성되어 있습니다.
-
-```bash
-final/
-├── requirements.txt   # 클라우드 배포를 위한 라이브러리 목록     
-├── .devcontainer/                       
-│   └── devcontainer.json
-└── app.py  # 메인 애플리케이션 (Streamlit 실행 파일)
 
 ## 🚀 배포 및 실행 방법 (Deployment Guide)
 
@@ -85,3 +75,14 @@ final/
 | **Web Framework** | Streamlit |
 | **AI Model** | KoBART (SKT) |
 | **Libraries** | Transformers, Torch, BeautifulSoup4, Requests |
+
+## 📂 프로젝트 구조
+
+깃허브 리포지토리는 아래와 같이 구성되어 있습니다.
+
+```bash
+final/
+├── requirements.txt   # 클라우드 배포를 위한 라이브러리 목록     
+├── .devcontainer/                       
+│   └── devcontainer.json
+└── app.py  # 메인 애플리케이션 (Streamlit 실행 파일)
