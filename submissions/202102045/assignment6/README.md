@@ -73,7 +73,7 @@
 | :--- | :--- |
 | **Language** | Python 3.8+ |
 | **Web Framework** | Streamlit |
-| **AI Model** | KoBART (SKT) |
+| **AI Model** | KoBART |
 | **Libraries** | Transformers, Torch, BeautifulSoup4, Requests |
 
 ## 📂 프로젝트 구조
