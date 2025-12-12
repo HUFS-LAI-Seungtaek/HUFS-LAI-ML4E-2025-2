@@ -1,4 +1,4 @@
-# 📢 외교부 소식 자동 요약 서비스 (MOFA News Summarizer)
+# 📢 외교부 소식 및 기사 자동 요약 서비스
 
 <div align="center">
 
