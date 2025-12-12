@@ -18,6 +18,8 @@
 
 사용자가 긴 보도자료를 다 읽지 않아도 **AI가 핵심 내용을 3줄로 요약**해 주며, 외교부 공식 블로그의 최신 글을 자동으로 수집하여 실시간 동향을 한눈에 제공합니다. 별도의 설치 없이 웹 브라우저에서 즉시 사용할 수 있도록 **Streamlit Cloud**를 통해 배포되었습니다.
 
+https://assignment6-deploy-fqz3medkju8xgtr8fxbmdu.streamlit.app/
+
 ---
 
 ## ✨ 주요 기능
