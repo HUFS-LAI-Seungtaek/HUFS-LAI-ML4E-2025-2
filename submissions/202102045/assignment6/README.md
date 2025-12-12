@@ -1,0 +1,90 @@
+# 📢 외교부 소식 및 기사 자동 요약 서비스
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
+![Model](https://img.shields.io/badge/Model-KoBART-orange)
+
+**"복잡한 국제 정세와 외교 소식, AI가 3줄로 핵심만 요약해 드립니다."**
+
+</div>
+
+---
+
+## 📖 프로젝트 개요
+
+정보 과잉(Information Overload) 시대에 외교 관련 소식을 빠르고 정확하게 파악하기 위해 개발된 **AI 뉴스 요약 서비스**입니다.
+
+사용자가 긴 보도자료를 다 읽지 않아도 **AI가 핵심 내용을 3줄로 요약**해 주며, 외교부 공식 블로그의 최신 글을 자동으로 수집하여 실시간 동향을 한눈에 제공합니다. 별도의 설치 없이 웹 브라우저에서 즉시 사용할 수 있도록 **Streamlit Cloud**를 통해 배포되었습니다.
+
+https://assignment6-deploy-fqz3medkju8xgtr8fxbmdu.streamlit.app/
+
+---
+
+## ✨ 주요 기능
+
+* **📝 텍스트 요약 (Summarization)**
+  * 사용자가 입력한 긴 뉴스 기사나 텍스트를 `KoBART` 모델이 분석하여 핵심 내용 3줄로 요약합니다.
+* **📡 외교부 소식 자동 수집 (Auto-Crawling)**
+  * 외교부 공식 블로그(RSS)를 실시간으로 크롤링하여 최신 글 리스트를 가져옵니다.
+* **🔗 원문 및 요약 동시 제공**
+  * 크롤링된 뉴스의 제목, 원문 링크, 그리고 AI 요약본을 직관적으로 제공합니다.
+
+---
+
+
+## 🚀 배포 및 실행 방법 (Deployment Guide)
+
+이 프로젝트는 **Streamlit Cloud**를 통해 웹 서비스로 배포하여 실행합니다.
+
+### 1️⃣ GitHub 리포지토리 업로드
+
+본 프로젝트의 `app.py`와 `requirements.txt` 파일을 GitHub 리포지토리에 업로드합니다.
+
+### 2️⃣ Streamlit Cloud 연결
+
+1. [Streamlit Cloud](https://share.streamlit.io/)에 접속하여 로그인합니다.
+2. 우측 상단의 **[New app]** 버튼을 클릭합니다.
+3. **Use existing repo**를 선택하고, 방금 업로드한 GitHub 리포지토리를 선택합니다.
+   * **Repository:** `사용자ID/리포지토리명`
+   * **Branch:** `main` (또는 `master`)
+   * **Main file path:** `app.py`
+4. **[Deploy!]** 버튼을 클릭하면 배포가 시작됩니다.
+
+### 3️⃣ 서비스 접속 및 사용
+
+배포가 완료되면 생성된 **URL**을 통해 PC나 모바일 어디서든 서비스에 접속할 수 있습니다.
+
+---
+
+## ⚠️ 사용 시 참고사항
+
+> **⏳ 초기 구동 시간**
+> * 클라우드 서버가 절전 모드일 경우, 최초 접속 시 부팅에 약 **1~3분** 정도 소요될 수 있습니다.
+> * 앱이 시작될 때 Hugging Face에서 AI 모델(`gogamza/kobart-summarization`)을 다운로드하므로 잠시 기다려주세요.
+
+> **📡 실시간 크롤링**
+> * '외교부 소식통' 탭에서 **[최신 소식 가져오기]** 버튼 클릭 시, 외교부 블로그 상황에 따라 데이터를 가져오는 데 **3~5초** 정도 걸릴 수 있습니다.
+
+---
+
+## 🛠 기술 스택 (Tech Stack)
+
+| 구분 | 내용 |
+| :--- | :--- |
+| **Language** | Python 3.8+ |
+| **Web Framework** | Streamlit |
+| **AI Model** | KoBART |
+| **Libraries** | Transformers, Torch, BeautifulSoup4, Requests |
+
+## 📂 프로젝트 구조
+
+깃허브 리포지토리는 아래와 같이 구성되어 있습니다.
+
+```bash
+final/
+├── requirements.txt   # 클라우드 배포를 위한 라이브러리 목록     
+├── .devcontainer/                       
+│   └── devcontainer.json
+└── app.py  # 메인 애플리케이션 (Streamlit 실행 파일)
